@@ -9,6 +9,7 @@ export default function WordSearch(props) {
     return (
       <div className="Words">
         <h2>{props.data.word}</h2>
+        <h3>/{props.data.phonetic}/</h3>
         {props.data.meanings.map(function(meaning, index){
           return (
           <div key={index}> 
