@@ -1,32 +1,36 @@
-import React, {useState} from "react";
-import "./Dictionary.css"
+import React, { useState } from "react";
+import "./Dictionary.css";
 import axios from "axios";
+import WordSearch from "./WordSearch";
+ 
 
-export default function Dictionary (){
-    let [keyword, setkeyword]= useState("");
+export default function Dictionary() {
+  let [keyword, setkeyword] = useState("");
+  let [words, setWords] = useState(null);
 
-    function handleResponse(response){
-        console.log(response.data.meanings[0]);
-    }
+  function handleResponse(response) {
+    console.log(response);
 
+    setWords(response.data)
+  }
 
-    function search(event){
-        event.preventDefault();
-            let apiKey = "990bbae9o01t0f92d3eba6338ad1439d";
-            let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
-            axios.get(apiUrl).then(handleResponse);
-    }
+  function search(event) {
+    event.preventDefault();
+    let apiKey = "990bbae9o01t0f92d3eba6338ad1439d";
+    let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
+    axios.get(apiUrl).then(handleResponse);
+  }
 
-    function handlekeyword(event){
-        setkeyword(event.target.value);
-    }
+  function handlekeyword(event) {
+    setkeyword(event.target.value);
+  }
 
-    return(
+      return(
         <div className="Dictionary">
             <form onSubmit={search}>
                 <input type="search" autoFocus={true} onChange={handlekeyword}/>
-
             </form>
+            <WordSearch data={words} />
         </div>
         
     )
