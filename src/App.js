@@ -15,7 +15,7 @@ export default function App() {
         <footer>
           Coded by  🏄‍♀️Jean Edem and is {" "}
           <span>
-            <a href="https://github.com/jeanlovestocode/dictionary-project">
+            <a href="https://github.com/jeanlovestocode/dictionary-project" rel="no-referrer">
               open-sourced on Github
             </a>
           </span>
