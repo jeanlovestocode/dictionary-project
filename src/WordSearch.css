@@ -1,0 +1,15 @@
+.Words{
+    color: #42240c;
+}
+
+.Words h2{
+    font-size: 35px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+.Words h3{
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: light;
+    opacity: 60%;
+}

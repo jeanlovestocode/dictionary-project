@@ -1,0 +1,16 @@
+.Meaning h4{
+    background-color: #876464;
+    color: #F2EFE7;
+    font-weight: bold;
+}
+
+.Meaning .definition{
+    font-size: 20px;
+    margin-top: 7px;
+}
+
+.Meaning .example{
+    font-size: 14px;
+    opacity: 0.7;
+    font-style: italic;
+}

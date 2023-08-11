@@ -1,6 +1,6 @@
-import logo from "./dict.png"
+import logo from "./dict.png";
 import Dictionary from "./Dictionary";
-import './App.css';
+import "./App.css";
 
 export default function App() {
   return (
@@ -10,12 +10,17 @@ export default function App() {
           <img src={logo} className="dictionary-logo img-fluid" alt="logo" />
         </header>
         <main>
-          <Dictionary />
+          <Dictionary defaultKeyword="meditate" />
         </main>
-        <footer>Coded by Jean Edem</footer>
+        <footer>
+          Coded by  🏄‍♀️Jean Edem and is {" "}
+          <span>
+            <a href="https://github.com/jeanlovestocode/dictionary-project">
+              open-sourced on Github
+            </a>
+          </span>
+        </footer>
       </div>
     </div>
   );
 }
-
-
