@@ -52,8 +52,8 @@ export default function Dictionary(props) {
     return (
       <div className="Dictionary">
         <section>
-          <h2>What word do you want to look up?</h2>
-      
+          <h2 className="heading">What word do you want to look up?</h2>
+
           <form onSubmit={handleSubmit}>
             <input
               type="search"
@@ -62,7 +62,9 @@ export default function Dictionary(props) {
               placeholder="Unravel expressions by typing any word"
             />
           </form>
-          <div>suggested words: 💅beauty, 🌅sunset, 🧘‍♀️meditate...</div>
+          <div className="d-none d-lg-block">
+            suggested words: 💅beauty, 🌅sunset, 🧘‍♀️meditate...
+          </div>
         </section>
         <WordSearch data={words} />
         <Images images={images} />

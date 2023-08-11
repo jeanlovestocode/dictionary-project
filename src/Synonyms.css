@@ -9,3 +9,12 @@
   opacity: 0.8;
   line-height: 1;
 }
+
+
+@media (max-width:900px) {
+    .Synonyms li {
+       text-align: center;
+       font-size: 11px;
+   
+    }
+  }

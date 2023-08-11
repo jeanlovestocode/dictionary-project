@@ -25,3 +25,11 @@
   font-weight: bold;
   color: #42240c;
 }
+
+ 
+@media (max-width:900px) {
+    .App footer{    
+       font-size: 9px;
+   
+    }
+  }
